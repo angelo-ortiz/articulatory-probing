@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "artprob"
+version = "1.0.0"
+authors = [
+    { name = "Angelo Ortiz Tandazo", email = "angelo.ortiz.tandazo@ens.psl.eu" },
+]
+description = "Simulating articulatory trajectories with phonological feature interpolation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "cca-zoo",
+    "click",
+    "jaxtyping",
+    "notebook",
+    "numba",
+    "numpy",
+    "pandas",
+    "panphon",
+    "praat-textgrids",
+    "safetensors",
+    "scikit-learn",
+    "soundfile",
+    "s3prl",
+    "torch",
+    "torchaudio",
+    "torchcubicspline@git+https://github.com/patrick-kidger/torchcubicspline.git",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+plot = ["matplotlib", "seaborn"]
+
+[project.urls]
+repository = "https://github.com/angelo-ortiz/articulatory-probing"
+
+[project.scripts]
+train = "artprob.train:main"
+test = "artprob.test:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
