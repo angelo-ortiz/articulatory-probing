@@ -128,3 +128,17 @@ one-hot phonemes, run
       --results_path /path/to/results/ma-cubic \
       --checkpoint_path /path/to/checkpoints/ma-cubic
     ```
+
+## Citation
+
+```bibtex
+@inproceedings{ortiztandazo24_interspeech,
+  title     = {Simulating articulatory trajectories with phonological feature interpolation},
+  author    = {Angelo {Ortiz Tandazo} and Thomas Schatz and Thomas Hueber and Emmanuel Dupoux},
+  year      = {2024},
+  booktitle = {Interspeech 2024},
+  pages     = {3595--3599},
+  doi       = {10.21437/Interspeech.2024-2192},
+  issn      = {2958-1796},
+}
+```
